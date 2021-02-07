@@ -5,22 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendar</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     
-    <header class="main-header">
-        <h1>Calendar</h1>
-        <form action="" method="post">
-            <select name="members" id="members">
-                <option value="All members">All members</option>
-                <option value="Anna">Alex</option>
-                <option value="Kateryna">Bob</option>
-                <option value="Maria">Maria</option>
-            </select>
-        </form>
-        <a href="create-event.html">New event</a>
+    <header class="main-header container">
+        <h1 class="flex-left">Calendar</h1>
+        <div class="flex-right">
+            <form class="members" method="post">
+                <select name="members" id="members">
+                    <option value="All members">All members</option>
+                    <option value="Anna">Alex</option>
+                    <option value="Kateryna">Bob</option>
+                    <option value="Maria">Maria</option>
+                </select>
+            </form>
+            <a class="btn btn-grey" href="create-event.html">New event</a>
+        </div>
     </header>
-    <main class="table">
+    <main class="table container">
         <table class="calendar">
             <tr class="row-header">
                 <th>Name</th>
@@ -105,9 +108,11 @@
         </table>
     </main>
     <section class="modal">
-        <p>Are you sure you want to delete "Retrospective event?"</p>
-        <button class="btn" type="button">No</button>
-        <button class="btn" type="submit">Yes</button>
+        <p>Are you sure you want to delete<br> "Retrospective event?"</p>
+        <div>
+            <button class="btn btn-white" type="button">No</button>
+            <button class="btn btn-white" type="submit">Yes</button>
+        </div>
     </section>
 
 </body>
